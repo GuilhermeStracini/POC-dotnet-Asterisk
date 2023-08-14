@@ -30,6 +30,7 @@ namespace POCAsterisk.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            _logger.LogInformation("GetWeatherForecast called");
             return Enumerable
                 .Range(1, 5)
                 .Select(
