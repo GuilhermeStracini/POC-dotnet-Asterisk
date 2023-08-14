@@ -1,0 +1,4 @@
+theme: jekyll-theme-minimal
+title: POC Asterisk
+description: A proof of concept of Asterisk PBX with .NET
+show_downloads: true
