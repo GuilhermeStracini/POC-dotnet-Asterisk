@@ -4,3 +4,6 @@ image: Visual Studio 2022
 configuration: Release
 skip_commits:
   message: /(Create|Update) .*\.(png|jpg|jpeg|bmp|gif|md)/
+
+before_build:
+- dotnet restore
