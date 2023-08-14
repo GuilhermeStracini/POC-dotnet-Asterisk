@@ -1,4 +1,3 @@
-
 namespace POCAsterisk
 {
     public class Program
@@ -26,7 +25,6 @@ namespace POCAsterisk
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
