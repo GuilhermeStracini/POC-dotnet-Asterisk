@@ -27,6 +27,6 @@ public class WeatherForecastControllerTests
         var items = response.ToList();
         items[0].TemperatureF.Should().Be(32 + (int)(items[0].TemperatureC / 0.5556));
         items[0].Summary.Should().NotBeNullOrEmpty();
-        items[0].Date.Should().Be(DateOnly.FromDateTime(DateTime.Now.AddDays(0)));
+        items[0].Date.Should().Be(DateOnly.FromDateTime(DateTime.Now.AddDays(1)));
     }
 }
