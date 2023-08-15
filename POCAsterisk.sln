@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POCAsterisk", "Src\POCAsterisk\POCAsterisk.csproj", "{4E512185-860E-46D8-8A9C-62CEF8D11E2A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{FC7F17C3-C40C-4C5C-97D8-653BBA6DBFAD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POCAsterisk", "Src\POCAsterisk\POCAsterisk.csproj", "{4E512185-860E-46D8-8A9C-62CEF8D11E2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3D4F5F0F-43C3-466D-90FE-919FF7DD7507}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POCAsterisk.Tests", "Tests\POCAsterisk.Tests\POCAsterisk.Tests.csproj", "{96E4F6FC-4F0C-478E-A315-AAFD4D6CF835}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POCAsterisk.IntegrationTests", "Tests\POCAsterisk.IntegrationTests\POCAsterisk.IntegrationTests.csproj", "{20FE34E7-BF25-4ED2-97E6-357DC7855B2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +23,22 @@ Global
 		{4E512185-860E-46D8-8A9C-62CEF8D11E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E512185-860E-46D8-8A9C-62CEF8D11E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E512185-860E-46D8-8A9C-62CEF8D11E2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96E4F6FC-4F0C-478E-A315-AAFD4D6CF835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96E4F6FC-4F0C-478E-A315-AAFD4D6CF835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96E4F6FC-4F0C-478E-A315-AAFD4D6CF835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96E4F6FC-4F0C-478E-A315-AAFD4D6CF835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20FE34E7-BF25-4ED2-97E6-357DC7855B2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20FE34E7-BF25-4ED2-97E6-357DC7855B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20FE34E7-BF25-4ED2-97E6-357DC7855B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20FE34E7-BF25-4ED2-97E6-357DC7855B2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4E512185-860E-46D8-8A9C-62CEF8D11E2A} = {FC7F17C3-C40C-4C5C-97D8-653BBA6DBFAD}
+		{96E4F6FC-4F0C-478E-A315-AAFD4D6CF835} = {3D4F5F0F-43C3-466D-90FE-919FF7DD7507}
+		{20FE34E7-BF25-4ED2-97E6-357DC7855B2A} = {3D4F5F0F-43C3-466D-90FE-919FF7DD7507}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {68978E22-09A9-4969-A643-A27D1F49DA96}
