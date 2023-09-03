@@ -1,4 +1,4 @@
-# POC-dotnet-Asterisk
+# PoC .NET Asterisk
 
 🔬 Proof of Concept of Asterisk PABX IP with .NET
 
