@@ -1,2 +1,4 @@
 theme: jekyll-theme-dinky
+title: PoC .NET Asterisk
+description: 🔬 Proof of Concept of Asterisk PABX IP with .NET
 show_downloads: true
