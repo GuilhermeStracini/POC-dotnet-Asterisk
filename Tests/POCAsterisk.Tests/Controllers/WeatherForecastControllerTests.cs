@@ -1,7 +1,7 @@
-﻿using Microsoft.Extensions.Logging.Abstractions;
-using POCAsterisk.Controllers;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using FluentAssertions;
+using Microsoft.Extensions.Logging.Abstractions;
+using POCAsterisk.Controllers;
 
 namespace POCAsterisk.Tests.Controllers;
 
