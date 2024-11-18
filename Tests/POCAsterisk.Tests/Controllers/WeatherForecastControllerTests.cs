@@ -8,8 +8,9 @@ namespace POCAsterisk.Tests.Controllers;
 [ExcludeFromCodeCoverage]
 public class WeatherForecastControllerTests
 {
-    private readonly WeatherForecastController _sut =
-        new(new NullLogger<WeatherForecastController>());
+    private readonly WeatherForecastController _sut = new(
+        new NullLogger<WeatherForecastController>()
+    );
 
     [Fact]
     public async Task GetValidRequestShouldReturnValidResponse()
