@@ -32,9 +32,12 @@ To work with this project, you need the following tools installed:
 
 2. Run the Asterisk Docker container:
    ```bash
-   docker run -d --name asterisk -p 5060:5060 -p 5061:5061 -p 8088:8088 -v /path/to/config:/etc/asterisk mlan/asterisk
-   ```
-
+   docker run -d --name asterisk \
+     -p 5060:5060 \
+     -p 5061:5061 \
+     -p 8088:8088 \
+     -v $(pwd)/asterisk-config:/etc/asterisk \
+     mlan/asterisk
 3. Restore project dependencies:
    ```bash
    dotnet restore
