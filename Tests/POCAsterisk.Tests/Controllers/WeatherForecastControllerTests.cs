@@ -17,7 +17,6 @@ public class WeatherForecastControllerTests
     {
         // Arrange
 
-
         // Act
         var response = await _sut.GetAsync();
 
