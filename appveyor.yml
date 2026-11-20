@@ -10,3 +10,9 @@ install:
 
 before_build:
 - dotnet restore
+
+build_script:
+- dotnet build POCAsterisk.sln -c %CONFIGURATION% --no-restore
+
+test_script:
+- dotnet test POCAsterisk.sln -c %CONFIGURATION% --no-build
