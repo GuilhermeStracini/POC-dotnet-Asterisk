@@ -3,5 +3,10 @@ skip_tags: true
 image: Visual Studio 2022
 configuration: Release
 
+install:
+- ps: Invoke-WebRequest -Uri 'https://dot.net/v1/dotnet-install.ps1' -UseBasicParsing -OutFile "$env:TEMP\dotnet-install.ps1"
+- ps: '& "$env:TEMP\dotnet-install.ps1" -Channel 10.0 -InstallDir "$env:ProgramFiles\dotnet"'
+- dotnet --version
+
 before_build:
 - dotnet restore
